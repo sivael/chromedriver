@@ -14,7 +14,8 @@ var baseUrl = process.env.NPM_CONFIG_ELECTRON_MIRROR ||
 var proxy = process.env.NPM_CONFIG_HTTPS_PROXY ||
   process.env.npm_config_https_proxy ||
   process.env.NPM_CONFIG_PROXY ||
-  process.env.npm_config_proxy
+  process.env.npm_config_proxy ||
+  process.env.https_proxy
 
 var config = {
   baseUrl: baseUrl,
